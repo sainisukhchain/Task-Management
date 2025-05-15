@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Sukhchain Saini\\Projects\\Task Managment\\Task Management\\Task Management.csproj",
+      "projectUniqueName": "D:\\Sukhchain Saini\\Projects\\Task Management.csproj",
       "projectName": "Task Management",
-      "projectPath": "D:\\Sukhchain Saini\\Projects\\Task Managment\\Task Management\\Task Management.csproj",
+      "projectPath": "D:\\Sukhchain Saini\\Projects\\Task Management.csproj",
       "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-      "outputPath": "D:\\Sukhchain Saini\\Projects\\Task Managment\\Task Management\\obj\\",
+      "outputPath": "D:\\Sukhchain Saini\\Projects\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
