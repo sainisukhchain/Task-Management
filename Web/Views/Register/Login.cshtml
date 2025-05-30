@@ -1,0 +1,52 @@
+﻿@using Models.User
+@model UserRegisterModel
+
+@*
+    
+*@
+@{
+    ViewData["Title"] = "Login";
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>@ViewData["Title"] - Web</title>
+        <script type="importmap"></script>
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+        <link rel="stylesheet" href="~/Web.styles.css" asp-append-version="true" />
+</head>
+
+<body class="d-flex align-items-center justify-content-center" style="height: 100vh; background-image: url('/img/geometric-gradient-futuristic-background_23-2149116406.avif'); background-size:cover;">
+    <div>
+        <div class="card shadow p-4" style="width: 350px;">
+            <h3 class="text-center mb-4">Login</h3>
+            <form asp-action="Login" method="post">
+                <div class="mb-3">
+                    <label asp-for="UserName" class="form-label"></label>
+                    <input asp-for="UserName" class="form-control" />
+                    <span asp-validation-for="UserName" class="text-danger small"></span>
+                </div>
+                <div class="mb-3">
+                    <label asp-for="Password" class="form-label"></label>
+                    <input asp-for="Password" class="form-control" />
+                    <span asp-validation-for="Password" class="text-danger small"></span>
+                </div>
+                @* <div class="form-check mb-3">
+                    <input asp-for="IsRemember" class="form-check-input" />
+                    <label asp-for="IsRemember" class="form-check-label"></label>
+                </div> *@
+                <button type="submit" class="btn btn-primary w-100">Login</button>
+            </form>
+            @if (!ViewData.ModelState.IsValid)
+            {
+                <div class="text-danger text-center mt-2">Invalid credentials. Try again.</div>
+            }
+        </div>
+    </div>
+    
+</body>
+</html>

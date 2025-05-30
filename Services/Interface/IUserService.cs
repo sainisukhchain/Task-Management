@@ -12,5 +12,6 @@ namespace Services.Interface
     {
         Task<IdentityResult> RegisterAsync(string username, string password);
         Task<ApplicationUser> LoginAsync(string username, string password);
+        Task LogoutAsync();
     }
 }
